@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microtask</title>
+    <title>TaskPulse</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+    
 </head>
 <body>
     <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/demo-logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,19 +30,24 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link" aria-current="page" href="#carouselExampleControls">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="#about-us">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">TESTIMONIALS</a>
+                            <a class="nav-link" href="#task-list">TASK LIST</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -43,24 +57,32 @@
 
     <!-- banner section -->
 
-    <section id="banner">
-
-       <div class="container">
-
-          <div class="row">
-            <div class="col-md-6">
-                <p class="promo-title">best digital agency</p>
-                <p>subscribe easy touturial youtube channel to watch more video on website developer digital marketing wordpress and graphic design </p>
-                <a href="#"><img src="images/play.png" class="play-btn">watch touturials</a>
+    <section >
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/taskpulse1.jpeg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/taskpulse2.jpeg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/taskpulse3.jpeg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/taskpulse4.jpeg" alt="Third slide">
+              </div>
             </div>
-            <div class="col-md-6 text-center">
-                <img src="/images/home2.png" class="img-fluid" >
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon black bg-black" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon   black bg-black " aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-
-       </div>
-
-       <img src="/images/wave1.png" class="bottom-img" >
+     
 
     </section>
 
@@ -71,27 +93,44 @@
     <div class="container text-center">
         <h1 class="title">WHAT WE DO ?</h1>
         <div class="row text-center">
-            <div class="col-md-4 services">
-                <img src="/images/service1.png" class="service-img">
-                <h4>Grouth Marketing</h4>
-                <p>subscribe easy touturial youtube channel to watch more video on website developer digital marketing wordpress and graphic design </p>
+            <div class="col-md-6 services">
+                <img src="/images/service1.png" class="service-img  float-animation">
+                <h4>Creativity</h4>
+                <p>Creativity drives our approach to developing unique and effective solutions. We harness imaginative thinking to deliver innovative strategies and breakthrough results. </p>
             </div>
 
 
-            <div class="col-md-4 services">
-                <img src="/images/service2.png" class="service-img">
-                <h4>Online Branding </h4>
-                <p>subscribe easy touturial youtube channel to watch more video on website developer digital marketing wordpress and graphic design </p>
+            <div class="col-md-6 services">
+                <img src="/images/service2.png" class="service-img   float-animation">
+                <h4>Superiority </h4>
+                <p>Superiority reflects our commitment to delivering exceptional standards and outstanding results. We ensure that every solution and service we provide stands out in quality and effectiveness. </p>
             </div>
 
 
-            <div class="col-md-4 services">
-                <img src="/images/service3.png" class="service-img">
-                <h4>Animated Ads</h4>
-                <p>subscribe easy touturial youtube channel to watch more video on website developer digital marketing wordpress and graphic design </p>
-            </div>
+            
 
         </div>
+
+      
+        <div class="row text-center">
+
+            <div class="col-md-6 services">
+                <img src="/images/service3.png" class="service-img  float-animation">
+                <h4>Coordination</h4>
+                <p>Coordination underscores our focus on seamless teamwork and effective integration. We work closely with our clients to ensure that every project achieves optimal results through well-orchestrated efforts. </p>
+            </div>
+
+            <div class="col-md-6 services">
+                <img src="/images/service1.png" class="service-img  float-animation">
+                <h4>Adaptable Partnerships</h4>
+                <p>Adaptable Partnerships emphasize our commitment to tailoring our services to meet diverse client needs. We adjust our approach to ensure flexibility and responsiveness in every engagement.</p>
+            </div>
+         </div>
+
+
+       
+
+
 
       <button type="button" class="btn btn-primary"> All Services <button>
     </div>
@@ -110,22 +149,102 @@
                 <div class="col-md-6 about-us">
                     <p class="about-title">Why we are diffrent</p>
                     <ul>
-                        <li>Believe in doing business with honesty</li>
-                        <li>Believe in doing business with honesty</li>
-                        <li>Believe in doing business with honesty</li>
-                        <li>Believe in doing business with honesty</li>
-                        <li>Believe in doing business with honesty</li>
-                        <li>Believe in doing business with honesty</li>
-                        <li>Believe in doing business with honesty</li>
+                        <li>Our company stands apart by integrating innovation with sustainability, ensuring every product is crafted with the future in mind.</li>
+                        <li>We value transparency, openly sharing our processes, progress, and setbacks with our community.</li>
+                        <li>Unlike others, we prioritize human connection in every interaction, creating authentic relationships with both clients and employees.</li>
+                        <li>We set ourselves apart by blending cutting-edge technology with a human-centered approach, delivering results that matter</li>
+                       <li>We are driven by purpose, committed to making a meaningful impact beyond just profits.</li>
+                       <li>What makes us unique is our commitment to continuous learning, allowing us to constantly improve and innovate in our field.</li>
+                       <li>Our company differs by focusing on collaboration over competition, fostering a culture where everyone thrives together.</li>
+                       <li>We redefine excellence by consistently exceeding expectations, delivering high-quality services that inspire trust.</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <img src="/images/network.png" class="img-fluid" >
+                    <img src="/images/network.png" class="img-fluid  float-animation" >
 
                 </div>
             </div>
         </div>
        </section>
+
+
+       <!-- TASK LIST -->
+
+       <!-- TASK LIST -->
+
+<!-- TASK LIST -->
+
+<section id="task-list">
+    <div class="container mt-5">
+        <h1 class="title text-center">HERE IS TASK</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card mb-4">
+                        <div class="card-body d-flex align-items-start">
+                            <img src="/images/tasklist3.jpeg" class="task-list-img">
+                            <div class="card-details ms-3">
+                                <h5 class="card-title">Data Scrapping</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Basic requirements - 20+ age, Good typing skills, Basic English, Android mobile required with good internet connectivity.</h6>
+                                <p class="card-text">Earning potential: 40000/-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card mb-4">
+                        <div class="card-body d-flex align-items-start">
+                            <img src="/images/tasklist2.jpeg" class="task-list-img">
+                            <div class="card-details ms-3">
+                                <h5 class="card-title">Prompt Pairing</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Basic Requirements: 18+ Age, Good Communication.</h6>
+                                <p class="card-text">Earning potential: 30000/-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-container">
+                    <!-- Card 3 -->
+                    <div class="card mb-4">
+                        <div class="card-body d-flex align-items-start">
+                            <img src="/images/tasklist1.jpeg" class="task-list-img">
+                            <div class="card-details ms-3">
+                                <h5 class="card-title">Store near me</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Basic requirements - 20+ age, Good typing skills, good knowledge of ChatGPT, Quick learner, Android mobile required with good internet connectivity.</h6>
+                                <p class="card-text">Earning potential: 30000/-</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card mb-4">
+                        <div class="card-body d-flex align-items-start">
+                            <img src="/images/tasklist4.jpeg" class="task-list-img">
+                            <div class="card-details ms-3">
+                                <h5 class="card-title">Profile Creation</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Basic Requirements: 18+ Age, Computer knowledge.</h6>
+                                <p class="card-text">Earning potential: 30000/-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    
+
+        <!-- TASK LIST -->
 
 
        <!-- ---------------testimonila---------------- -->
@@ -138,40 +257,54 @@
 
             <div class="row offset-1">
                 <div class="col-md-5  testimonials">
-                <p>subscribe easy touturial youtube channel to watch more video on website developer digital marketing wordpress and graphic design </p>
+                <p>TaskPulse streamlined our task management and client communication—simple, efficient, and highly effective! </p>
                 <img src="/images/user1.jpg">
-                <p class="user-details"><b>Agelina</b> <br> co-founder at xyz</p>
+                <p class="user-details"><b>Agelina</b> <br> </p>
                 </div>
 
                 <div class="col-md-5  testimonials">
-                    <p>subscribe easy touturial youtube channel to watch more video on website developer digital marketing wordpress and graphic design </p>
+                    <p>TaskPulse transformed our task tracking and client updates—smooth, reliable, and incredibly efficient!</p>
                     <img src="/images/user2.jpg">
-                    <p class="user-details"><b>John Dow</b> <br> directer at xyz</p>
+                    <p class="user-details"><b>John Dow</b> <br> </p>
                     </div>
 
             </div>
 
         </div>
 
-       </section>
 
-       <!--        social media section             -->
-               <section id="social-media">
+               
 
-                <div class="container  text-center">
-                 <p>FIND US ON SOCIAL MEDIA</p>   
 
-                 <div class="social-icons">
-                    <a href="#"> <img src="images/facebook-icon.png"></a>
-                    <a href="#"> <img src="images/instagram-icon.png"></a>
-                    <a href="#"> <img src="images/twitter-icon.png"></a>
-                    <a href="#"> <img src="images/whatsapp-icon.png"></a>
-                    <a href="#"> <img src="images/linkedin-icon.png"></a>
-                    <a href="#"> <img src="images/snapchat-icon.png"></a>
-                 </div>
-                </div>
-             
-               </section>
+               <!-- footer section -->
+
+<section id="footer">
+    <!-- <img src="images/wave2.png" class="footer-img" > -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 footer-box  mr-3">
+                <img src="images/demo-logo.png" alt="">
+                <p>The  TaskPulse empowers SMBs with tailored solutions and expert services to drive success and innovation. </p>
+            </div>
+
+            <div class="col-md-6 footer-box mt-3 ">
+                <p><b>CONTACT US</b></p>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                    2nd floor, NS Complex, Nelamangala
+Bangalore - 562123</p>
+                
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                    support@taskpules.in</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+</section>
 
 </body>
 </html>

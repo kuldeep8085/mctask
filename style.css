@@ -13,12 +13,12 @@ body{
 }
 
 .navbar{
-    background-image:linear-gradient(to right,#a517ba,#5f1782);
     padding: 0 !important;
+    background-color: black !important;
 }
 
 .navbar-brand img{
-    height: 40px;
+    height: 100px;
     padding-left: 20px;
 }
 
@@ -43,33 +43,31 @@ body{
 .navbar-toggler{
     outline: none !important;
 }
-/* banner ki css is here */
 
-#banner{
-    background-image: linear-gradient(to right,#a517ba,#5f1782);
-    color: #fff;
-    padding-top: 5%;
+
+/* General carousel styling */
+.carousel-inner img {
+    object-fit: cover;
 }
 
-.promo-title{
-
-    font-size: 40px;
-    font-weight: 600;
-    margin-top: 100px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a background for better visibility */
+    border-radius: 50%;
 }
 
-.play-btn{
-    width: 45px;
-    margin: 20px;
-}
-#banner a {
-    color: #fff;
-    text-decoration: none;
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background to make controls visible */
 }
 
-.bottom-img{
-    width:100%;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
 }
+
 
 /* services */
 
@@ -149,11 +147,19 @@ body{
 #about-us ul {
     margin-left: 10px;
 }
+/* task list */
+
+
+
+
+
+
+
 
 /*                TESTIMONIALS                */
 
 #testimonials{
-    margin: 100px 0;
+    margin-top: 100px;
 }
 
 .testimonials{
@@ -172,28 +178,154 @@ body{
     font-size: 12px;
 }
 
-/*    ------------social media       */
 
-#social-media{
 
-    background: #f8f9fa;
-    padding: 100px 0;
+
+
+/*    --------------footer------------ */
+
+#footer{
+    background: black !important;
+    color: #fff;
+    margin-top: 30px;
 }
 
-#social-media p {
-
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 30px;
+.mt-3{
+    margin-top: 2rem !important;
 }
 
-.social-icons img {
-    width: 60px;
-    transition: 0.5s;
+.footer-img{
+    width: 100%;
 }
 
-.social-icons a:hover img {
+.footer-box{
+    padding: 10px;
+}
+.footer-box img{
+    width: 120px;
+    margin-bottom: 1px;
+}
+
+.footer-box  .fa {
+       
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    
+}
+
+.footer-box .form-control {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+
+/* Basic card styling */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.card img{
+    width: 10vw;
+}
+.card-body {
+    padding: 20px;
+    gap: 2rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Hover effect */
+.card:hover {
     transform: translateY(-10px);
-
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Optional: Add a subtle animation to the card */
+@keyframes card-hover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: card-hover 2s infinite ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+    /* Basic card styling */
+.card-container {
+    margin: auto;
+}
+.card-body {
+    gap: 0.2rem;
+    flex-direction: column;
+}
+.card img{
+    width: 30vw;
+    margin: auto;
+}
+  }
